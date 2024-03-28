@@ -12,7 +12,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/salvatore-riccardi/"
             target="_blank"
           >
-            I'm Social
+            I&apos;m Social
           </a>
         </div>
       </div>
