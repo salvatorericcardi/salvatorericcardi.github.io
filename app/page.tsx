@@ -31,7 +31,7 @@ export default function Home() {
                 &rarr;
               </span>
             </h2>
-            <div className="flex flex-row gap-x-2 mb-3 text-xs opacity-50">
+            <div className="flex flex-row justify-center gap-x-2 mb-3 text-xs text-center opacity-50 lg:justify-start lg:text-left">
               <span className="border-b border-gray-300 bg-gradient-to-b from-zinc-200 p-2 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:dark:bg-zinc-800/30">
                 html
               </span>
@@ -42,7 +42,7 @@ export default function Home() {
                 javascript
               </span>
             </div>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            <p className="my-0 mx-auto max-w-[30ch] text-sm opacity-50">
               Customize your alpaca or generate a random one and download it.
             </p>
           </a>
