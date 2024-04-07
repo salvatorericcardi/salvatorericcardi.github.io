@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main id="main" className="flex min-h-screen flex-col items-center p-24 gap-y-6">
-      <div className="flex flex-col justify-between z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-row md:flex-row">
+      <div className="flex flex-col z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-row md:flex-row">
         <div className="flex flex-col w-auto justify-center border border-gray-200 from-zinc-200 p-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:flex-row lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:bg-gradient-to-b lg:p-4 lg:dark:bg-zinc-800/30 md:flex-row md:bg-transparent md:border md:bg-gray-200 md:p-4 md:rounded-xl md:border md:dark:bg-zinc-800/30">
           Salvatore Riccardi&nbsp;
           <code className="font-mono font-bold text-center">My Own Website</code>
@@ -48,10 +48,10 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div id="contacts" className="flex flex-col z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+      <div id="contacts" className="flex flex-col gap-y-3 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <div className="w-auto lg:hidden md:hidden">
           <a
-            className="pointer-events-none p-8 font-bold lg:pointer-events-auto"
+            className="pointer-events-auto"
             href="https://www.linkedin.com/in/salvatore-riccardi/"
             target="_blank"
           >
