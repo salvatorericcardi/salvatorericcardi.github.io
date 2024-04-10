@@ -1,0 +1,25 @@
+{
+    "title": "Salvatore Riccardi",
+    "description": "Web Developer in province of Latina, Latium",
+    "header": {
+        "title": "Salvatore Riccardi",
+        "subtitle": "My Own Website",
+        "linkedin": "I'm Social"
+    },
+    "projects": "Educational Projects",
+        "project1": {
+            "title": "Alpaca Image Generator",
+            "stack": {
+                "html": "html",
+                "css": "css",
+                "javascript": "javascript"
+            },
+            "description": "Customize your alpaca or generate a random one and download it."
+        },
+    "footer": {
+        "base": {
+            "text": "Proudly based in",
+            "city": "Fondi"
+        }
+    }
+}
