@@ -1,12 +1,11 @@
 import { getDictionary } from "@/get-dictionary";
-import { Locale, i18n } from "@/i18n.config";
-import Link from "next/link"
+import { Locale } from "@/i18n.config";
+import Switcher from "./Switcher";
 
 export default async function Header(props: {
     lang: Locale
 }) {
     const dictionary = await getDictionary(props.lang);
-    const locales = i18n.locales.filter(locale => locale !== props.lang)
 
     return (
         <div className="flex flex-col z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-row md:flex-row">
@@ -15,7 +14,7 @@ export default async function Header(props: {
                 <code className="font-mono font-bold text-center">{dictionary.header.subtitle}</code>
             </div>
             <header className="flex flex-row gap-x-2">
-                <div className="hidden lg:static lg:h-auto lg:bg-none lg:block md:block">
+                <div className="hidden py-4 lg:static lg:h-auto lg:bg-none lg:block md:block">
                     <a
                     className="pointer-events-auto p-8 font-bold lg:p-4 md:p-4"
                     href="https://www.linkedin.com/in/salvatore-riccardi/"
@@ -24,22 +23,7 @@ export default async function Header(props: {
                         {dictionary.header.linkedin}
                     </a>
                 </div>
-                <div className="py-4 lg:static lg:h-auto lg:bg-none lg:block md:block">
-                    {locales.map((locale, index) => {
-                    const lang = locale === "en" ? "gb" : locale
-                    
-                    return (
-                        <Link
-                        className="pointer-events-auto font-bold"
-                        href={"/" + locale}
-                        lang={locale}
-                        key={index}
-                        >
-                        <span className={"fi fi-" + lang}></span>
-                        </Link>
-                    )
-                    })}
-                </div>
+                <Switcher lang={props.lang} />
             </header>
         </div>
     )

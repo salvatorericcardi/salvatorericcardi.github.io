@@ -6,7 +6,7 @@
         "subtitle": "My Own Website",
         "linkedin": "I'm Social"
     },
-    "projects": "Educational Projects",
+    "projects": "Projects",
         "project1": {
             "title": "Alpaca Image Generator",
             "stack": {
