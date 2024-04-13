@@ -1,6 +1,6 @@
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { Locale, i18n } from "@/i18n.config";
-import { getDictionary } from "@/get-dictionary";
+import { getDictionary } from "@/lib/dictionary";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

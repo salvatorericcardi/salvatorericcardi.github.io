@@ -1,4 +1,4 @@
-import { getDictionary } from "@/get-dictionary";
+import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/i18n.config";
 import Switcher from "./Switcher";
 

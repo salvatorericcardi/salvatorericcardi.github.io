@@ -1,4 +1,4 @@
-import { getDictionary } from "@/get-dictionary";
+import { getDictionary } from "@/lib/dictionary";
 import { Locale, i18n } from "@/i18n.config";
 
 export default async function Footer(props: {
