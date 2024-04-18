@@ -10,7 +10,6 @@ export default async function Home({
   params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
-  const locales = i18n.locales.filter(locale => locale !== lang)
 
   return (
     <main id="main" className="flex min-h-screen flex-col items-center p-24 gap-y-6">
