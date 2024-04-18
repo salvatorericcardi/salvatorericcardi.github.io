@@ -1,6 +1,6 @@
 import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/i18n.config";
-import Switcher from "./Switcher";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export default async function Header(props: {
     lang: Locale
@@ -23,7 +23,7 @@ export default async function Header(props: {
                         {dictionary.header.linkedin}
                     </a>
                 </div>
-                <Switcher lang={props.lang} />
+                <LocaleSwitcher lang={props.lang} />
             </header>
         </div>
     )
