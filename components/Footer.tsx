@@ -1,6 +1,6 @@
 import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/i18n.config";
-import LiT from "@/public/lit.svg";
+import LiT from "@/lit.svg";
 import Image from "next/image";
 
 export default async function Footer(props: {
