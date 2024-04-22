@@ -1,5 +1,6 @@
 import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/i18n.config";
+import Image from "next/image";
 
 export default async function Footer(props: {
     lang: Locale
@@ -29,7 +30,7 @@ export default async function Footer(props: {
             </div>
             <div>{dictionary.footer.base.text} <strong>{dictionary.footer.base.city}</strong></div>
             <a href="https://www.latinaintech.org/" target="_blank">
-                <img className="w-12" src="lit.svg" alt="LiT - Latina in Tech"/>
+                <Image src="lit.svg" alt="LiT - Latina in Tech" width={48} height={48}/>
             </a>
         </div>
     )
