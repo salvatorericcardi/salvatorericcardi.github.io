@@ -4,7 +4,7 @@ import { Locale } from "@/i18n.config";
 export default async function Footer(props: {
     lang: Locale
 }) {
-    const dictionary = await getDictionary(props.lang);
+    const translation = await getDictionary(props.lang);
 
     return (
         <div id="contacts" className="flex flex-col gap-y-3 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm md:grid md:grid-flow-col md:auto-cols-max">
@@ -27,7 +27,7 @@ export default async function Footer(props: {
                     </svg>
                 </a>
             </div>
-            <div>{dictionary.footer.base.text} <strong>{dictionary.footer.base.city}</strong></div>
+            <div className="text-center">{translation.footer.base.text} <strong>{translation.footer.base.city}</strong></div>
             <a href="https://www.latinaintech.org/" target="_blank">
                 <img className="w-12" src="/lit.png" alt="LiT - Latina in Tech"/>
             </a>
