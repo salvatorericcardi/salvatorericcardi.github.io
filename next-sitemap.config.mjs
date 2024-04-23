@@ -5,7 +5,6 @@ export default {
     priority: 1.0,
     lastmod: new Date().toISOString(),
     generateIndexSitemap: false,
-    exclude: ['/'],
     additionalPaths: async () => [
         {
             loc: "https://salvatorericcardi.github.io/alpaca-generator",

@@ -29,7 +29,7 @@ export default async function Footer(props: {
             </div>
             <div className="text-center">{translation.footer.base.text} <strong>{translation.footer.base.city}</strong></div>
             <a href="https://www.latinaintech.org/" target="_blank">
-                <img className="w-12" src="/lit.png" alt="LiT - Latina in Tech"/>
+                <img className="w-12" src="/images/lit.png" alt="LiT - Latina in Tech"/>
             </a>
         </div>
     )
