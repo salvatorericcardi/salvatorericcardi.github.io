@@ -7,7 +7,7 @@ export default async function Footer(props: {
     const translation = await getDictionary(props.lang);
 
     return (
-        <div id="contacts" className="flex flex-col gap-y-3 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm md:grid md:grid-flow-col md:auto-cols-max">
+        <div id="contacts" className="flex flex-col gap-y-3 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm p-8 md:grid md:grid-flow-col md:auto-cols-max md:p-4">
             <div className="flex flex-row gap-x-3 items-center">
                 <a
                     className="pointer-events-auto"
