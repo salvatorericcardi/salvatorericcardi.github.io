@@ -17,3 +17,7 @@ export default function RootLayout({
     </html>
   );
 }
+
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
