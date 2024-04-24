@@ -1,16 +1,18 @@
 import { Inter } from "next/font/google";
-import { i18n } from "@/i18n.config";
-import "./globals.css";
+import { Locale, i18n } from "@/i18n.config";
+import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
+  params
 }: Readonly<{
   children: React.ReactNode;
+  params: { lang: Locale };
 }>) {
   return (
-    <html>
+    <html lang={params.lang ?? i18n.defaultLocale} className="scroll-smooth">
       <body className={inter.className}>{children}</body>
     </html>
   );

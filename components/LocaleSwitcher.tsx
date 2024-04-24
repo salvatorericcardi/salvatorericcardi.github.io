@@ -1,4 +1,5 @@
 'use client';
+import '@/styles/switcher.css';
 import { Locale, i18n } from "@/i18n.config"
 import { useRouter } from "next/navigation";
 import { MouseEvent, useState } from "react";
