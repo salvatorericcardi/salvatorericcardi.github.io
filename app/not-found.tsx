@@ -2,6 +2,7 @@
 import '@/styles/loader.css';
 import { i18n } from '@/i18n.config';
 import React from 'react';
+import { usePathname } from 'next/navigation';
 
 const oldPaths = [
   '/',
@@ -14,8 +15,8 @@ const oldPaths = [
 });
 
 const useBackRouteCompatibility = () => {
+  const pathname = usePathname();
   React.useEffect(() => {
-    const { pathname } = window.location;
     if (oldPaths.some(p => p.test(pathname))) {
       window.location.replace(`/${i18n.defaultLocale}${pathname}`);
     }
