@@ -15,10 +15,12 @@ const oldPaths = [
 });
 
 const useBackRouteCompatibility = () => {
-  const pathname = usePathname();
   React.useEffect(() => {
-    if (oldPaths.some(p => p.test(pathname))) {
+    const { pathname } = window.location;
+    if (oldPaths.some(p => p.test(pathname)) && pathname !== '/') {
       window.location.replace(`/${i18n.defaultLocale}${pathname}`);
+    } else if(pathname === '/') {
+      window.location.replace(`/${i18n.defaultLocale}`);
     }
   }, []);
 };
