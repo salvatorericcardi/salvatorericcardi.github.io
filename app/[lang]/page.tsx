@@ -72,6 +72,8 @@ export async function generateMetadata({
       },
     },
     openGraph: {
+      title: translation.title,
+      description: translation.description,
       images: {
         url: "/images/castello-baronale/castello-baronale_fondi_linkedin.jpg",
         width: 1200,
