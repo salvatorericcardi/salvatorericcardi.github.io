@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/dictionary";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import React from "react";
+import { Metadata } from "next";
 
 export default async function Home({
   params: { lang },
@@ -50,4 +51,35 @@ export default async function Home({
       <Footer lang={lang} />
     </main>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: Locale };
+}): Promise<Metadata> {
+  const translation = await getDictionary(params.lang);
+
+  return {
+    title: translation.title,
+    description: translation.description,
+    metadataBase: new URL("https://salvatorericcardi.github.io"),
+    alternates: {
+      canonical: '/',
+      languages: {
+        'it': '/it',
+        'en': '/en',
+      },
+    },
+    openGraph: {
+      images: {
+        url: "/castello-baronale_fondi.jpg",
+        width: 1200,
+        height: 900,
+        alt: "castello baronale di fondi"
+      },
+      locale: params.lang,
+      alternateLocale: i18n.locales.filter(locale => locale !== params.lang),
+    }
+  }
 }
