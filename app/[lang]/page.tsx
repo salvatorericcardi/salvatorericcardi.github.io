@@ -73,9 +73,9 @@ export async function generateMetadata({
     },
     openGraph: {
       images: {
-        url: "/castello-baronale_fondi.jpg",
+        url: "/images/castello-baronale/castello-baronale_fondi_linkedin.jpg",
         width: 1200,
-        height: 900,
+        height: 627,
         alt: "castello baronale di fondi"
       },
       locale: params.lang,
