@@ -2,7 +2,6 @@
 import '@/styles/loader.css';
 import { i18n } from '@/i18n.config';
 import React from 'react';
-import { usePathname } from 'next/navigation';
 
 const oldPaths = [
   '/',

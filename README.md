@@ -27,7 +27,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## How to contribute
 
-Create your own fork then clone with `git clone [your repo]` command and enjoy. If you have a good idea, open your issue.
+Create your own fork then clone with `git clone [your repo]` and enjoy. If you have a good idea, open your issue.
 
 ## License
 

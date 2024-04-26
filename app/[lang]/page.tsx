@@ -51,16 +51,3 @@ export default async function Home({
     </main>
   );
 }
-
-export async function generateMetadata({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
-  const translation = await getDictionary(lang);
-
-  return {
-    title: translation.title,
-    description: translation.description
-  }
-}
