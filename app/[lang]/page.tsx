@@ -88,6 +88,8 @@ export async function generateMetadata({
   return {
     title: translation.title,
     description: translation.description,
+    keywords: ["web", "developer", "latina"],
+    authors: [{name: "Salvatore Riccardi"}],
     metadataBase: new URL("https://salvatorericcardi.github.io"),
     alternates: {
       canonical: '/',
