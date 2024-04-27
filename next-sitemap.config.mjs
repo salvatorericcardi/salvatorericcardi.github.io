@@ -23,6 +23,12 @@ export default {
             changefreq: "yearly",
             priority: 0.7,
             lastmod: new Date().toISOString(),
+        },
+        {
+            loc: "https://salvatorericcardi.github.io/contact-form",
+            changefreq: "yearly",
+            priority: 0.7,
+            lastmod: new Date().toISOString(),
         }
     ],
 }
