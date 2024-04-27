@@ -9,12 +9,11 @@
     "projects": "Projects",
         "project1": {
             "title": "Alpaca Image Generator",
-            "stack": {
-                "html": "html",
-                "css": "css",
-                "javascript": "javascript"
-            },
             "description": "Customize your alpaca or generate a random one and download it."
+        },
+        "project2": {
+            "title": "Contact form",
+            "description": "Example of contact form with input validation."
         },
     "footer": {
         "base": {

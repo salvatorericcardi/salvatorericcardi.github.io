@@ -9,12 +9,11 @@
     "projects": "Portfolio",
         "project1": {
             "title": "Alpaca",
-            "stack": {
-                "html": "html",
-                "css": "css",
-                "javascript": "javascript"
-            },
             "description": "Personalizza il tuo alpaca o generane uno casualmente e scaricalo."
+        },
+        "project2": {
+            "title": "Form di contatto",
+            "description": "Esempio di form di contatto con validazione degli input."
         },
     "footer": {
         "base": {
