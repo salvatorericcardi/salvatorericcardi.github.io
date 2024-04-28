@@ -1,24 +1,26 @@
 {
-    "title": "Salvatore Riccardi",
-    "description": "Sviluppatore Web in provincia di Latina, Lazio",
-    "header": {
+    "home": {
         "title": "Salvatore Riccardi",
-        "subtitle": "Il Mio Sito Web",
-        "linkedin": "LinkedIn"
-    },
-    "projects": "Portfolio",
-        "project1": {
-            "title": "Alpaca",
-            "description": "Personalizza il tuo alpaca o generane uno casualmente e scaricalo."
+        "description": "Sviluppatore Web in provincia di Latina, Lazio",
+        "header": {
+            "title": "Salvatore Riccardi",
+            "subtitle": "Il Mio Sito Web",
+            "linkedin": "LinkedIn"
         },
-        "project2": {
-            "title": "Form di contatto",
-            "description": "Esempio di form di contatto con validazione degli input."
-        },
-    "footer": {
-        "base": {
-            "text": "Membro della community",
-            "city": "Latina in Tech"
+        "projects": "Portfolio",
+            "project1": {
+                "title": "Alpaca",
+                "description": "Personalizza il tuo alpaca o generane uno casualmente e scaricalo."
+            },
+            "project2": {
+                "title": "Form di contatto",
+                "description": "Esempio di form di contatto con validazione degli input."
+            },
+        "footer": {
+            "base": {
+                "text": "Membro della community",
+                "city": "Latina in Tech"
+            }
         }
     }
 }

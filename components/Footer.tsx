@@ -4,7 +4,7 @@ import { Locale } from "@/i18n.config";
 export default async function Footer(props: {
     lang: Locale
 }) {
-    const translation = await getDictionary(props.lang);
+    const {home: translation} = await getDictionary(props.lang);
 
     return (
         <div id="contacts" className="flex flex-col gap-y-3 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm p-8 md:grid md:grid-flow-col md:auto-cols-max md:p-4">

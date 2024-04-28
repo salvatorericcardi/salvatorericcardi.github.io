@@ -1,24 +1,26 @@
 {
-    "title": "Salvatore Riccardi",
-    "description": "Web Developer in province of Latina, Latium",
-    "header": {
+    "home": {
         "title": "Salvatore Riccardi",
-        "subtitle": "My Own Website",
-        "linkedin": "I'm Social"
-    },
-    "projects": "Projects",
-        "project1": {
-            "title": "Alpaca Image Generator",
-            "description": "Customize your alpaca or generate a random one and download it."
+        "description": "Web Developer in province of Latina, Latium",
+        "header": {
+            "title": "Salvatore Riccardi",
+            "subtitle": "My Own Website",
+            "linkedin": "I'm Social"
         },
-        "project2": {
-            "title": "Contact form",
-            "description": "Example of contact form with input validation."
-        },
-    "footer": {
-        "base": {
-            "text": "Proudly based in",
-            "city": "Fondi"
+        "projects": "Projects",
+            "project1": {
+                "title": "Alpaca Image Generator",
+                "description": "Customize your alpaca or generate a random one and download it."
+            },
+            "project2": {
+                "title": "Contact form",
+                "description": "Example of contact form with input validation."
+            },
+        "footer": {
+            "base": {
+                "text": "Proudly based in",
+                "city": "Fondi"
+            }
         }
     }
 }

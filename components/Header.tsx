@@ -5,7 +5,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 export default async function Header(props: {
     lang: Locale
 }) {
-    const translation = await getDictionary(props.lang);
+    const {home: translation} = await getDictionary(props.lang);
 
     return (
         <div className="flex flex-col gap-y-4 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-row md:flex-row">

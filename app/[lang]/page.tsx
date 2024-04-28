@@ -11,7 +11,7 @@ export default async function Home({
 }: {
   params: { lang: Locale };
 }) {
-  const translation = await getDictionary(lang);
+  const {home: translation} = await getDictionary(lang);
 
   return (
     <main id="main" className="flex min-h-screen flex-col items-center p-24 gap-y-6">
@@ -83,7 +83,7 @@ export async function generateMetadata({
 }: {
   params: { lang: Locale };
 }): Promise<Metadata> {
-  const translation = await getDictionary(params.lang);
+  const {home: translation} = await getDictionary(params.lang);
 
   return {
     title: translation.title,
