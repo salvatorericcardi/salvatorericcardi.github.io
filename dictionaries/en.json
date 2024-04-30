@@ -22,5 +22,10 @@
                 "city": "Fondi"
             }
         }
+    },
+    "notFound": {
+        "paragraph1": "Looks like you've stumbled into the void.",
+        "paragraph2": "But don't panic, just click below to get back on track!",
+        "link": "Go Home"
     }
 }

@@ -22,5 +22,10 @@
                 "city": "Latina in Tech"
             }
         }
+    },
+    "notFound": {
+        "paragraph1": "Sembra che tua sia finito in un vicolo cieco.",
+        "paragraph2": "Niente panico, basta cliccare sotto per tornare sulla tua strada!",
+        "link": "Homepage"
     }
 }
